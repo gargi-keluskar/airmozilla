@@ -117,7 +117,7 @@
       <p>
         {{ _('Tags') }}:
         {% for tag in tags %}
-          <a href="{{ url('main:home') }}?tag={{ tag | urlencode }}" class="tag">{{ tag }}</a>{% if not loop.last %}, {% endif %}
+          <a href="{{ url('main:home') }}?tag={{ tag | urlencode }}" class="tag"><div class="tag-box">{{ tag }}</div></a>{% if not loop.last %}, {% endif %}
         {% endfor %}
       </p>
       {% endif %}
